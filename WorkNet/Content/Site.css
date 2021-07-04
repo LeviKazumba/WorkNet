@@ -1,0 +1,347 @@
+﻿.li-search {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    background-color: #f6f6f6;
+    padding: 8px;
+    font-size: 18px;
+    color: black;
+    display: block;
+    cursor: pointer;
+}
+
+    .li-search:hover {
+        background-color: #eee;
+    }
+
+.opt-icon {
+    margin-top: 30px;
+    margin-bottom: 20px
+}
+
+.card-block {
+    width: 215px;
+    border: 1px solid lightgrey;
+    border-radius: 5px !important;
+    background-color: #FAFAFA;
+    margin-bottom: 30px
+}
+
+.radio {
+    display: inline-block;
+    border-radius: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: #000;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+    .radio.selected {
+        box-shadow: 0px 8px 16px 0px #EEEEEE;
+        opacity: 1;
+    }
+
+    .radio:hover {
+        background-color: #d7f5e8;
+        opacity: 1;
+    }
+
+.selected {
+    background-color: #e0f2ea;
+}
+
+
+.SignUp .form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border: solid 1px #137a86;
+}
+
+.SignUp select:focus {
+    outline: none;
+    box-shadow: none;
+    border: solid 1px #137a86;
+}
+
+.SignUp .btn-outline-secondary {
+    background-color: #fdc214;
+    color: white;
+}
+
+    .SignUp .btn-outline-secondary:hover {
+        background-color: #fdc214 !important;
+        color: white !important;
+    }
+
+    .SignUp .btn-outline-secondary:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+.valid {
+    color: #28a745
+}
+
+.next {
+    background-color: #137a86;
+    border: solid 1px #137a86;
+}
+
+    .next:focus, .next:hover, .next:active {
+        background-color: #137a86;
+        outline: none !important;
+        box-shadow: none !important;
+        border: solid 1px #137a86;
+    }
+
+.back {
+    background-color: #fdc214;
+    border: solid 1px #fdc214;
+}
+
+    .back:hover, .back:focus, .back:active {
+        outline: none !important;
+        box-shadow: none !important;
+        background-color: #fdc214 !important;
+        border: solid 1px #fdc214 !important;
+    }
+
+/*Profession tags*/
+.ui-autocomplete {
+}
+
+.ui-menu {
+}
+
+.ui-widget {
+}
+
+.ui-widget-content {
+}
+
+.ui-widget.ui-widget-content {
+}
+
+
+
+/* autocomplete tagsinput*/
+.label-info {
+    margin: .2em;
+    background-color: #137a86;
+    display: inline-block;
+    padding: 0.5em;
+    font-size: .9em;
+    font-weight: 500;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 7px;
+}
+
+/*end*/
+
+/*cv upload*/
+.CV-file {
+    visibility: hidden;
+    position: absolute;
+}
+
+.upload-cv {
+    color: #fff;
+    background-color: #137a86;
+    border: solid 1px #137a86;
+}
+
+    .upload-cv:hover, .upload-cv:active, .upload-cv:focus {
+        color: #fff;
+        outline: none !important;
+        box-shadow: none !important;
+        background-color: #137a86;
+        border: solid 1px #137a86;
+    }
+
+.delete-cv {
+    color: #fff;
+    background-color: red;
+    border: solid 1px red;
+}
+
+    .delete-cv:hover, .delete-cv:active, .delete-cv:focus {
+        color: #fff;
+        outline: none !important;
+        box-shadow: none !important;
+        background-color: red;
+        border: solid 1px red;
+    }
+
+/*end*/
+
+/*username and email check */
+.Username-check {
+    font-style: italic;
+}
+
+.Email-check {
+    font-style: italic;
+}
+
+.Telephone-check {
+    font-style: italic;
+}
+
+/*end*/
+
+/*Profile pic*/
+.profile-pic-wrapper {
+   
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic-holder {
+    text-align: center;
+    position: relative;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border: solid 1px #137a86;
+    /*padding: .5em;*/
+}
+
+    .pic-holder .pic {
+        height: 100%;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: center;
+        object-position: center;
+    }
+
+    .pic-holder .upload-file-block,
+    .pic-holder .upload-loader {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(90, 92, 105, 0.7);
+        color: #f8f9fc;
+        font-size: 12px;
+        font-weight: 600;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s;
+    }
+
+    .pic-holder .upload-file-block {
+        cursor: pointer;
+    }
+
+    .pic-holder:hover .upload-file-block {
+        opacity: 1;
+    }
+
+    .pic-holder.uploadInProgress .upload-file-block {
+        display: none;
+    }
+
+    .pic-holder.uploadInProgress .upload-loader {
+        opacity: 1;
+    }
+
+/* Snackbar css */
+.snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 14px;
+    transform: translateX(-50%);
+}
+
+    .snackbar.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+
+.AccountType:hover {
+    cursor: pointer;
+    box-shadow: 0 14px 20px rgba(0,0,0,0.20), 0 10px 10px rgba(0,0,0,0.20);
+}
+
+/*end*/
+
+
+
